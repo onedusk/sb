@@ -1,0 +1,32 @@
+# Code Owners for SB Media Processor
+#
+# These owners will be requested for review when someone opens a pull request
+# that modifies code in a given area.
+
+# Default owners for everything in the repo
+* @dusk-labs/sb-maintainers
+
+# Core architecture
+/internal/converter/ @dusk-labs/sb-core
+/internal/executor/ @dusk-labs/sb-core
+
+# Converters
+/internal/processors/ @dusk-labs/sb-converters
+
+# CLI and configuration
+/cmd/ @dusk-labs/sb-cli
+/internal/config/ @dusk-labs/sb-cli
+
+# Documentation
+/docs/ @dusk-labs/sb-docs
+*.md @dusk-labs/sb-docs
+
+# Build and CI
+/Makefile @dusk-labs/sb-infra
+/.github/ @dusk-labs/sb-infra
+/go.mod @dusk-labs/sb-infra
+/go.sum @dusk-labs/sb-infra
+
+# Security-sensitive files
+/SECURITY.md @dusk-labs/sb-security
+/.github/workflows/security.yml @dusk-labs/sb-security

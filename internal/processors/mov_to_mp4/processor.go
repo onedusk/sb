@@ -285,10 +285,8 @@ func (c *MP4Converter) determineOutputPath(input string, opts converter.Options)
 			return filepath.Join(opts.OutputDir, outputName)
 		} else {
 			// Preserve structure: maintain relative path
-			absInput, _ := filepath.Abs(input)
-			inputDir := filepath.Dir(absInput)
-
-			// Try to maintain relative structure
+			// For now, just use the output dir with filename
+			// TODO: implement full path preservation
 			return filepath.Join(opts.OutputDir, outputName)
 		}
 	}
